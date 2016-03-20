@@ -48,7 +48,7 @@
                   (lambda (input)
                     (say (reply-to input) :sdv-multiplayer-responses)))
 
-(provide-output :sdv-last-changelog-url "http://steamcommunity.com/games/413150#announcements/detail/822278032384212096")
+(provide-output :sdv-last-changelog-url "Update 1.06 changelog: http://steamcommunity.com/games/413150#announcements/detail/822278032384212096")
 (provide-output :sdv-macos-port-url "https://www.reddit.com/r/StardewValley/comments/47tad9/mac_osx_megathread/")
 
 (provide-output :sdv-next-update-responses '("Dunno. Nothing known yet."
