@@ -1,0 +1,4 @@
+
+(:PCODE 1
+ (:HASH-TABLE 1 16 1.5 1.0 EQUALP NIL
+  ((:SIMPLE-STRING 2 "TeMPOraL") (:LIST 3)))) 
