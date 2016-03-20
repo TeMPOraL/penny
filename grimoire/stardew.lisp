@@ -42,7 +42,8 @@
 (register-matcher :sdv-multiplayer
                   (list (match-score (lambda (input)
                                        (and (directedp input)
-                                            (or (mentions "multiplayer" (unquoted-part input))
+                                            (or (mentions "multi" (unquoted-part input))
+                                                (mentions "multiplayer" (unquoted-part input))
                                                 (mentions "coop" (unquoted-part input)))))))
                   (lambda (input)
                     (say (reply-to input) :sdv-multiplayer-responses)))
