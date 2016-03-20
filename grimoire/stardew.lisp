@@ -48,8 +48,20 @@
                   (lambda (input)
                     (say (reply-to input) :sdv-multiplayer-responses)))
 
+(register-matcher :sdv-bug-reports
+                  (list (match-score (lambda (input)
+                                       (and (directedp input)
+                                            (or (mentions "send" (unquoted-part input))
+                                                (mentions "report" (unquoted-part input))
+                                                (mentions "form" (unquoted-part input)))
+                                            (or (mentions "bug" (unquoted-part input))
+                                                (mentions "bugs" (unquoted-part input)))))))
+                  (lambda (input)
+                    (say (reply-to input) :sdv-bug-reports-url)))
+
 (provide-output :sdv-last-changelog-url "Update 1.06 changelog: http://steamcommunity.com/games/413150#announcements/detail/822278032384212096")
 (provide-output :sdv-macos-port-url "https://www.reddit.com/r/StardewValley/comments/47tad9/mac_osx_megathread/")
+(provide-output :sdv-bug-reports-url "Report game bugs at: http://goo.gl/forms/1pnd0EkwL4")
 
 (provide-output :sdv-next-update-responses '("Dunno. Nothing known yet."
                                              "CA didn't say anything so far. Wait for his AMA."))
