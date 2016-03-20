@@ -48,11 +48,11 @@
                   (lambda (input)
                     (say (reply-to input) :sdv-multiplayer-responses)))
 
-(provide-output :sdv-last-changelog-url "https://www.reddit.com/r/StardewValley/comments/4aszp7/patch_notes_for_todays_patch/")
+(provide-output :sdv-last-changelog-url "http://steamcommunity.com/games/413150#announcements/detail/822278032384212096")
 (provide-output :sdv-macos-port-url "https://www.reddit.com/r/StardewValley/comments/47tad9/mac_osx_megathread/")
 
-(provide-output :sdv-next-update-responses '("There should be an update with improved marriage dialogues this week."
-                                             "There should be an update of marriage dialogues coming this week."))
+(provide-output :sdv-next-update-responses '("Dunno. Nothing known yet."
+                                             "CA didn't say anything so far. Wait for his AMA."))
 
 (provide-output :sdv-portability-responses '(#("The game works only on Windows. There is a community port for MacOS and some people report it works on Linux under wine."
                                                "Other platforms are planned in the future, *after* content updates, but no estimated date is known. I.e. probably not soon.")
