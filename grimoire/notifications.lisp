@@ -103,6 +103,8 @@
                                             (or (mentions "notify" (unquoted-part input))
                                                 (mentions "ask" (unquoted-part input))
                                                 (mentions "ping" (unquoted-part input))
+                                                (and (mentions "tell" (unquoted-part input))
+                                                     (not (mentions "tell me" (unquoted-part input))))
                                                 ;; (mentions "podrzuć" (unquoted-part input))
                                                 ;; (mentions "zapyta" (unquoted-part input))
                                                 ;; (mentions "spyta" (unquoted-part input))
