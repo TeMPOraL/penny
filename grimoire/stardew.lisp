@@ -54,7 +54,8 @@
 (provide-output :sdv-next-update-responses '("There should be an update with improved marriage dialogues this week."
                                              "There should be an update of marriage dialogues coming this week."))
 
-(provide-output :sdv-portability-responses '("The game works only on Windows. There is a community port for MacOS and some people report it works on Linux under wine."
+(provide-output :sdv-portability-responses '(#("The game works only on Windows. There is a community port for MacOS and some people report it works on Linux under wine."
+                                               "Other platforms are planned in the future, *after* content updates, but no estimated date is known. I.e. probably not soon.")
                                              "Windows only for now, ports to other platforms planned, but no estimated date is known."))
 
 (provide-output :sdv-multiplayer-responses '(#("The author estimates around 4 months for multiplayer."
