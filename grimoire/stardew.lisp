@@ -60,15 +60,15 @@
                     (say (reply-to input) :sdv-bug-reports-url)))
 
 (provide-output :sdv-last-changelog-url "Update 1.06 changelog: http://steamcommunity.com/games/413150#announcements/detail/822278032384212096")
-(provide-output :sdv-macos-port-url "https://www.reddit.com/r/StardewValley/comments/47tad9/mac_osx_megathread/")
+(provide-output :sdv-macos-port-url #("The author will be looking into MacOS port \"very soon\". There is a community effort at:" "https://www.reddit.com/r/StardewValley/comments/47tad9/mac_osx_megathread/"))
 (provide-output :sdv-bug-reports-url "Report game bugs at: http://goo.gl/forms/1pnd0EkwL4")
 
 (provide-output :sdv-next-update-responses '("Dunno. Nothing known yet."
                                              "CA didn't say anything so far."))
 
 (provide-output :sdv-portability-responses '(#("The game works only on Windows. There is a community port for MacOS and some people report it works on Linux under wine."
-                                               "Other platforms are planned in the future, *after* content updates, but no estimated date is known. I.e. probably not soon.")
-                                             "Windows only for now, ports to other platforms planned, but no estimated date is known. Mobile port not likely."))
+                                               "Other platforms are planned in the future, Linux/MacOS \"very soon\", but no estimated date is known.")
+                                             "Windows only for now, ports to other platforms planned, but no estimated date is known. The work on Linux/MacOS port will start \"very soon\". Mobile port not likely."))
 
 (provide-output :sdv-multiplayer-responses '(#("The author estimates around 4 months for multiplayer."
                                                "(Honestly, it'll probably be six to twelve. You know, dev estimates...)")
