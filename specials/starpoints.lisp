@@ -3,7 +3,7 @@
 (defparameter +starpoint-increment-regex+ "^([^ \\+]+)\\+\\+$")
 
 (defparameter +max-starpoint-scores-list-length+ 10)
-(defparameter *starpoints-list* '(("Test" . 10) ("Test2" . 20)))
+(defvar *starpoints-list* '(("Test" . 10) ("Test2" . 20)))
 
 (defparameter *starpoints-title-msg* '("☆Starpoints!"))
 (defparameter *starpoints-nice-try-msg* '("Nice try..."
