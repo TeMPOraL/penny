@@ -5,5 +5,6 @@
   ;; (handle-blueline destination is-private is-public is-directed from-who message-body)
   (handle-comments destination is-private is-public is-directed from-who message-body)
   ;; (handle-standard-answers destination is-private is-public is-directed from-who message-body)
+  (handle-starpoints destination is-private is-public is-directed from-who message-body)
   (handle-general-terms destination is-private is-public is-directed from-who message-body))
 

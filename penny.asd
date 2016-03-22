@@ -73,6 +73,7 @@
                                      (:file "comments")
                                      (:file "general-terms")
                                      (:file "standard-answers")
+                                     (:file "starpoints")
                                      (:file "specials")))
 
                (:file "local-config" :depends-on ("grimoire"))))

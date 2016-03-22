@@ -30,6 +30,8 @@
 
 (defparameter *default-phrase* "I don't know what to say...")
 
+(defparameter *specials-suppress-normal-output* nil)
+
 
 ;; functions
 ;; tools
@@ -85,9 +87,12 @@
 
       (check-for-memos destination from-who)
 
+      (setf *specials-suppress-normal-output* nil) ;HACKY HACK
+
       (handle-specials destination is-private is-public is-directed from-who message-body)
 
-      (execute-match message)
+      (unless *specials-suppress-normal-output* ;HACKY HACK
+       (execute-match message))
 
       (setf *debug-last-message* (extract-message-features message))))
 

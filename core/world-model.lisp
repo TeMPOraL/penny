@@ -14,6 +14,8 @@
 (defun load-persistent-world-model-data ()
   (read-back-into-hashtable *canonical-nicks* "names.dat")
   (load-dumped-memos)
+  ;; FIXME hack
+  (load-starpoints)
   nil)                                  ;one day we'll be loading data from "memory" after restart
 
 ;; names tracking

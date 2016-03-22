@@ -28,6 +28,17 @@
     (with-open-file (in filename)
       (ms:unmarshal (read in)))))
 
+
+(defun dumb-serialize-list-to-file (list filename)
+  (with-open-file (out filename :if-exists :supersede :direction :output)
+    (print list out)))
+
+(defun dumb-deserialize-list-from-file (filename)
+  "Reads back and deserializes hashtable from `FILENAME' saved by `SERIALIZE-HASHTABLE-TO-FILE'."
+  (when (probe-file filename)
+    (with-open-file (in filename)
+      (read in))))
+
 (defun dump-hashtable (hashtable filename)
   "Serializes all `HASHTABLE' data into a file `FILENAME'. Such file can be read back by `READ-BACK-INTO-HASHTABLE'."
   (let ((entries '()))
