@@ -132,7 +132,8 @@
 (register-matcher :dice-throw
                   (list (match-score (lambda (input)
                                        (and (directedp input)
-                                            (mentions "throw" (unquoted-part input))
+                                            (or (mentions "throw" (unquoted-part input))
+                                                (mentions "roll" (unquoted-part input)))
                                             (or (mentions "K6" (unquoted-part input))
                                                 (mentions-regexp "dice" (unquoted-part input))
                                                 (mentions-regexp "die" (unquoted-part input)))))))
@@ -214,7 +215,7 @@
 
 
 (provide-output :introduction '("Call me Penny, how can I help you?."
-                                "Penny." ;TODO
+                                "Hi there, I'm Penny. I live here."
                                 "Hi! I'm Penny. The resident bot of #StardewValley."))
 
 (provide-output :version *version*)

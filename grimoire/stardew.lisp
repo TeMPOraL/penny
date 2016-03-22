@@ -64,11 +64,11 @@
 (provide-output :sdv-bug-reports-url "Report game bugs at: http://goo.gl/forms/1pnd0EkwL4")
 
 (provide-output :sdv-next-update-responses '("Dunno. Nothing known yet."
-                                             "CA didn't say anything so far. Wait for his AMA."))
+                                             "CA didn't say anything so far."))
 
 (provide-output :sdv-portability-responses '(#("The game works only on Windows. There is a community port for MacOS and some people report it works on Linux under wine."
                                                "Other platforms are planned in the future, *after* content updates, but no estimated date is known. I.e. probably not soon.")
-                                             "Windows only for now, ports to other platforms planned, but no estimated date is known."))
+                                             "Windows only for now, ports to other platforms planned, but no estimated date is known. Mobile port not likely."))
 
 (provide-output :sdv-multiplayer-responses '(#("The author estimates around 4 months for multiplayer."
                                                "(Honestly, it'll probably be six to twelve. You know, dev estimates...)")
